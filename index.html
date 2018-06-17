@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Find Nearby Cancer Trials</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+  <style>
+    #map {
+    width: 960px;
+    height: 500px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<!--
+  <span id="latlon_fields">
+  Latitude: <input id="a" size="5"><br>
+  </span>
+  <span id="latlon_fields">
+  Longitude: <input id="b" size="5"><br>
+  </span>
+  <span id="latlon_fields" class="first_search">
+  <button onclick="reset(document.getElementById('a').value,document.getElementById('b').value)">Submit</button>
+  </span>
+-->
+
+  <span id="latlon_fields">
+  Location: <input id="c" size="15"><br>
+  </span>
+  <button onclick="reset_address(document.getElementById('c').value)">Submit</button> <br/>
+
+  <div id="logoholder"></div>
+  <div id="maploader"> <h4>Designed by Christopher Lo</h4> </div>
+  <div id="mapholder"></div>
+  <div id="map"></div>
+  <div id="root"></div>
+
+  <script src="geolocation.js"></script>
+
+</body>
+
+<script src="color_icon.js"></script>
+<script src="logo_script.js"></script>
+<script src="scripts.js"></script>
+<script src="reset_map.js"></script>
+
+
+</html>
