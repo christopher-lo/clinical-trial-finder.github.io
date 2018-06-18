@@ -30,7 +30,7 @@ request.onload = function () {
   if (request.status >= 200 && request.status < 400) {
     data.forEach(trial => {
       //console.log(trial);
-      const card = document.createElement('div');
+      /*const card = document.createElement('div');
       card.setAttribute('class', 'card');
 
       const h1 = document.createElement('h1');
@@ -42,7 +42,7 @@ request.onload = function () {
 
       container.appendChild(card);
       card.appendChild(h1);
-      card.appendChild(p);
+      card.appendChild(p);*/
 	var i = 0;
 	trial.sites.forEach(site => {
 	  //console.log(Object.keys(site));
